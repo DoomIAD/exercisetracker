@@ -1,5 +1,5 @@
 import workout_classes
-
+import customtkinter
 
 reply = input("Welcome to Exercise Tracker!\nWhat would you like to do?\n 1. Create a workout\n 2. Update biometrics\n")
 
@@ -12,7 +12,7 @@ if reply == "1":
     
     new_exercise = workout_classes.Exercise(exercise,set,rep,weight)
     print(new_exercise)
-    
+
 elif reply=="2":
     print("Biometrics Setup")
     weight = input("Weight:\n")
